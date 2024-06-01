@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    
+}
+#main{
+    background-image: url("img/bgMAIN.png");
+    background-size: cover;
+    
+}
+
+
+#about{
+    background-image: url("img/bgABOUT.png");
+    background-size: cover;
+}
+#skills{
+    background-image: url("img/bgSKILLS.png");
+    background-size: cover;
+}
+
+#works{
+    background-image: url("img/bgWORKS.png");
+    background-size: cover;
+}
+
+#comments{
+    background-image: url("img/bgCOMMENTS.png");
+    background-size: cover;
+}
+
+.main-block, .about-block, .skills-block, .works-block, .comments-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.main-block{
+    flex-direction: column;
+    height: 100vh;
+}
+.main-content{
+    background-image: url(img/form1.png);
+    background-size: contain;
+    width: 851px;
+    height: 229px;
+    padding-left: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-title{
+    color: #2B2D35;
+    font-size: 80px;
+    font-weight: 700;
+    padding-top: 67px;
+    
+    
+}
+.main-subtitle{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    color: #2B2D35;
+    font-weight: 700;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    border: #000 2px solid;
+    background-color:  #BBFF2C;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: #000 5px 5px ;
+    transition: all 0.5s;
+}
+.button a {
+    text-decoration: none;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000 ;
+}
+.button:hover{
+    background-color: #a0d826;
+}
