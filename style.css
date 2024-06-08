@@ -49,6 +49,7 @@
     padding-left: 35px;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 2;
 }
 .main-title{
     color: #2B2D35;
@@ -86,4 +87,90 @@
 }
 .button:hover{
     background-color: #a0d826;
+}
+.img2{
+    width: 405px;
+    height: 330px;
+    position: absolute;
+    transform: rotate(-176);
+    right: 250px;
+    z-index: 1;
+}
+@keyframes animations1 {
+    from {background-color: #BBFF2C; border-radius: 0;}
+    50% {background-color: aqua; border-radius: 16px;}
+    to {background-color: #2B2D35; border-radius: 22px;}
+}
+.button1{
+    background-color: #BBFF2C;
+    border-radius: 0;
+    animation-name: animations1 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animations2{
+    from {transform: translateY(0);}
+    to {transform: translateY(100px);  }
+}
+.img3{
+    width: 150px;
+    animation-name: animations2 ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    
+}
+.title{
+    font-weight: 700;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: #000 5px 5px;
+    text-align: center;
+    padding-top: 100px;
+}
+.about-content{
+    width: 45%;
+    height: 270px;
+    background-color:  #792AFF;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+.about-title{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    max-width: 430px;
+    max-height: 190px;
+}
+.about-card{
+    background-image: url(img/form2.png);
+    width: 376px;
+    height: 346px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 10px;
+}
+.about-text{
+    padding: 50px;
+}
+.about-card p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+.about-card img{
+    margin-bottom: 20px;
 }
