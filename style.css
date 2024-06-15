@@ -218,3 +218,82 @@
     width: 28% ;
     margin-right: 20px;
 }
+.comments-block{
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 1300px;
+}
+.comment-card{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 180px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 3px #000;
+    
+
+}
+.comment-card h3 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 0;
+    
+}
+.comment-card p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.comment-card img {
+    margin-top: 10px;
+}
+.comment{
+    background-image: url(img/comment.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 327px;
+    height: 161px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #BBFF2C  5px 5px ;
+    border-radius: 7px;
+    
+}
+.comment p {
+    font-size: 20px;
+    max-width: 250px;
+    font-weight: 400;
+}
+footer{
+    background-color:#200153 ;
+    height: 110px; 
+    display: flex;
+    padding: 0 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+footer h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.footer-year{
+    margin-right: 220px;
+}
+
+
+
