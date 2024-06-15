@@ -3,7 +3,7 @@
 *{
     margin: 0;
     font-family: "Inter", sans-serif;
-    
+    scroll-behavior: smooth;
 }
 #main{
     background-image: url("img/bgMAIN.png");
@@ -294,6 +294,52 @@ footer h3 {
 .footer-year{
     margin-right: 220px;
 }
-
-
-
+nav{
+    position: fixed;
+    top:  0;
+    left:  0;
+    width: 100%;
+    z-index: 10;
+    
+}
+.logo{
+    color: #BBFF2C;
+    font-weight: 700;
+    font-size: 64px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+}
+.nav-link{
+    width: 112px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid #000;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin: 15px;
+    font-family: "Comfortaa", sans-serif;
+    transition: all 0.5s;
+}
+.nav-link:hover{
+    background-color: #792AFF;
+    color: #fff;
+}
