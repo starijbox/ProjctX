@@ -5,6 +5,10 @@ menu.addEventListener("click", function(event){
     if(clicktarget.classList.contains("nav-link")){
         clicktarget.classList.add("active")
         currentActive.classList.remove("active")
+        let mobile = document.querySelector(".mobile-menu")
+        if (!mobile.classList.contains("hide")){
+            mobile.classList.add("hide")
+        }
     }
 })
 
@@ -30,3 +34,10 @@ window.onscroll = function(){
         newactiveBtn.classList.add("active")
     }
 }
+
+document.querySelector(".mobile-button").addEventListener("click",
+    function(event){
+        document.querySelector(".mobile-menu").classList.toggle("hide")
+    }
+)
+
