@@ -9,7 +9,19 @@ menu.addEventListener("click", function(event){
         if (!mobile.classList.contains("hide")){
             mobile.classList.add("hide")
         }
+        let body = document.querySelector("body")
+    let mobileMenu = document.querySelector(".mobile-menu")
+    if  (!body.classList.contains("off-scroll")&&!mobileMenu.classList.contains("hide")){
+        body.classList.add("off-scroll")
     }
+    else{
+    body.classList.remove("off-scroll")
+    
+ 
+    }
+    
+    }
+    
 })
 
 let classLink = ".main-link"
@@ -40,4 +52,8 @@ document.querySelector(".mobile-button").addEventListener("click",
         document.querySelector(".mobile-menu").classList.toggle("hide")
     }
 )
+
+
+    
+
 
